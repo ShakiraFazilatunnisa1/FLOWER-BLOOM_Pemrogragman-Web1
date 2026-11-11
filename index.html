@@ -1,0 +1,390 @@
+Shakira Fazilatunnisa 24552011001
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bloom Your Day</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #fff8f6;
+    color: #684d50;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* NAVIGASI */
+header {
+    height: 75px;
+    padding: 0 7%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #bd7588;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #684d50;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #bd7588;
+}
+
+/* MAIN CONTENT */
+main {
+    max-width: 1250px;
+    height: calc(100vh - 115px);
+    margin: auto;
+    padding: 20px 5% 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 38%;
+    gap: 30px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text span {
+    color: #bd7588;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.hero-text h1 {
+    color: #b96f82;
+    font-size: 38px;
+    margin: 10px 0;
+}
+
+.hero-text p {
+    font-size: 13px;
+    line-height: 1.7;
+    max-width: 420px;
+}
+
+.hero img {
+    width: 38%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 100px 100px 15px 15px;
+}
+
+.btn {
+    background: #bd7588;
+    color: white;
+    padding: 10px 22px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 13px;
+    font-size: 12px;
+}
+
+.btn:hover {
+    background: #a45c71;
+}
+
+/* PRODUCTS */
+.products {
+    height: 43%;
+    padding-top: 10px;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.heading h2 {
+    color: #b96f82;
+    font-size: 23px;
+}
+
+.heading p {
+    font-size: 11px;
+    margin-top: 4px;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 17px;
+}
+
+.card {
+    background: white;
+    padding: 9px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 3px 12px #0000000c;
+}
+
+.card img {
+    width: 100%;
+    height: 105px;
+    object-fit: cover;
+    border-radius: 9px;
+}
+
+.card h3 {
+    color: #b96f82;
+    font-size: 14px;
+    margin-top: 7px;
+}
+
+.card p {
+    font-size: 10px;
+    margin: 5px 0;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 12px;
+    color: #b96f82;
+}
+
+/* INFORMATION */
+.information {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fcebea;
+    border-radius: 12px;
+    padding: 12px 20px;
+    margin-top: auto;
+    gap: 20px;
+}
+
+.info h3 {
+    color: #b96f82;
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+.info p {
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+/* FOOTER */
+footer {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    color: #b96f82;
+}
+
+/* SMALL SCREEN */
+@media (max-width: 700px) {
+    body {
+        height: auto;
+        overflow: auto;
+    }
+
+    header {
+        height: auto;
+        padding: 18px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    main {
+        height: auto;
+    }
+
+    .hero {
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .hero img {
+        width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 30px;
+    }
+
+    .products {
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .product-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .information {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    footer {
+        margin-top: 10px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🌷 Flower Bloom</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<main>
+
+    <!-- HOME -->
+    <section class="hero" id="home">
+
+        <div class="hero-text">
+            <span> WELLCOME TO FLOWER BLOOM</span>
+
+            <h1>Make Your Flower</h1>
+
+            <p>
+                Discover beautiful flowers for every special moment.
+                Share love, happiness, and beautiful memories
+                through our lovely flower collections.
+            </p>
+
+            <button class="btn"
+                onclick="lihatProduk()">
+                Explore Our Flowers ♡
+            </button>
+        </div>
+
+        <img
+            src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=800"
+            alt="Flower Bouquet">
+
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="products" id="products">
+
+        <div class="heading">
+            <h2>Our Best Sellers</h2>
+            <p>Beautiful flowers, made with love ♡</p>
+        </div>
+
+        <div class="product-list">
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1712258090338-e83050d6664d?w=500"
+                     alt="Pink Rose">
+                <h3>Pink Rose</h3>
+                <p>Sweet and romantic roses</p>
+                <div class="price">Rp 85.000</div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1520763185298-1b434c919102?w=500"
+                     alt="Tulip">
+                <h3>Sweet Tulip</h3>
+                <p>Lovely and elegant tulips</p>
+                <div class="price">Rp 100.000</div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1696650501041-9f1b722733b6?w=500"
+                     alt="Sunflower">
+                <h3>Sunflower</h3>
+                <p>Brighten someone's day</p>
+                <div class="price">Rp 75.000</div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1494972308805-463bc619d34e?w=500"
+                     alt="White Bouquet">
+                <h3>Red Rose</h3>
+                <p>Simple and elegant flowers</p>
+                <div class="price">Rp 120.000</div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ABOUT AND CONTACT -->
+    <section class="information">
+
+        <div class="info" id="about">
+            <h3>About Us 🌸</h3>
+            <p>
+                Bloom Your Day is a flower shop that brings
+                beauty and happiness through flowers.
+            </p>
+        </div>
+
+        <div class="info" id="contact">
+            <h3>Contact Us ♡</h3>
+            <p>
+                Bandung, Indonesia<br>
+                flowerbloom@gmail.com<br>
+                Instagram: @flowerbloom
+            </p>
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    © 2026 Flower Bloom Your Day | Made with Love ♡
+</footer>
+
+<script>
+function lihatProduk() {
+    alert("🌷 Welcome to Bloom Your Day! Enjoy our flower collection.");
+}
+</script>
+
+</body>
+</html>
